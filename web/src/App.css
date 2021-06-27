@@ -1,0 +1,16 @@
+.container {
+  display:flex;
+  width:50%;
+  background-color: white;
+  flex-direction: column;
+  margin: 0 auto;
+  padding:5px;
+}
+
+input {
+  height: 50px;
+  padding-left: 14px;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  font-size: 20px;
+}
