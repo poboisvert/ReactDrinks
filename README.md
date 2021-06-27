@@ -28,5 +28,5 @@ This projects explore React and search in a database fetch from an API.
 > docker run "id from docker ps"
 
 
-### live testing
+### Local live testing
 > docker run -p 3000:3000 pob944/drinks

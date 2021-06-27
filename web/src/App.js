@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import './App.css';
 import Card from './components/Card';
 import buildData from './api/api';
@@ -43,10 +43,11 @@ function App() {
   );
   // Render on input - Filter the data base on input box
   // https://dev.to/asimdahall/simple-search-form-in-react-using-hooks-42pg
-  useEffect(
+
+  const tags = useMemo(
     () => {
-      const results = data.filter((e) =>
-        e.strDrink.toLowerCase().includes(searchTerm)
+      const results = data.filter((drink) =>
+        drink.strDrink.toLowerCase().includes(searchTerm.toLowerCase())
       );
 
       setFilterData(results);
