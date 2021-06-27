@@ -41,8 +41,7 @@ function App() {
     },
     [tag]
   );
-  // Render on input - Filter the data base on input box
-  // https://dev.to/asimdahall/simple-search-form-in-react-using-hooks-42pg
+  // Render on input - Filter the data base on input 2
 
   const tags = useMemo(
     () => {
