@@ -1,0 +1,13 @@
+name: tests-web
+
+on:
+  pull_request:
+    path:
+      - 'web/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd web && npm install && npm run test
