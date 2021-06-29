@@ -1,5 +1,3 @@
-# ReactDrinks
-
 ## Project Overview
 
 This projects explore React and search in a database fetch from an API.
